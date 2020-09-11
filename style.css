@@ -244,3 +244,134 @@ path.colorize {
     background-color: var(--main-lighter-black);
     box-shadow: 0px 0px 20px var(--main-black);
 }
+
+#download_container {
+    width: 100%;
+
+    text-align: center;
+
+    background-color: var(--main-gray);
+    border-radius: 20px;
+    border-bottom: 5px solid var(--main-lighter-black);
+    box-shadow: 0px 10px 20px var(--main-black);
+}
+
+#download_container h1 {
+    font-size: calc(20px + 1vw);
+    color: var(--main-color);
+}
+
+#download_container hr {
+    width: 80%;
+    height: 0;
+    border: 5px solid var(--main-darker-color);
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+#about_page {
+    background-color: var(--main-gray);
+    box-shadow: 0px 0px 20px var(--main-black);
+}
+
+#message_container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5vw;
+    box-sizing: border-box;
+
+    border: 5px solid var(--main-darker-color);
+    border-radius: 20px;
+}
+
+#message_container img {
+    border-radius: 100%;
+    width: 20%;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -3vw;
+    
+    display: inline-block;
+    float: left;
+}
+
+#message_container p {
+    font-size: calc(15px + 0.5vw);
+    line-height: 1.5em;
+
+    display: inline;
+}
+#message_container p::before {
+    content: '"';
+    display: inline-block;
+    
+    font-size: calc(30px + 1.5vw);
+    color: var(--main-color);
+    font-family: 'Courier New', Courier, monospace;
+}
+#message_container p::after {
+    content: '"';
+    display: inline-block;
+    
+    font-size: calc(30px + 1.5vw);
+    color: var(--main-color);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.social_medias {
+    position: relative;
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+
+    border-radius: 30%;
+
+    transition: 0.1s;
+}
+.social_medias:hover {
+    background-color: var(--main-lighter-black);
+    cursor: pointer;
+
+    transition: 0.1s;
+}
+svg.hover {
+    cursor: pointer;
+}
+
+path.colorize.github {
+    fill: var(--main-white);
+}
+path.colorize.twitter {
+    fill: #1da1f2;
+}
+path.colorize.discord {
+    fill: #7289DA;
+}
+path.colorize.youtube {
+    fill: var(--main-alert);
+}
+
+
+
+
+
+
+
+#bottom {
+    width: 100%;
+    background-color: var(--main-black);
+    padding: 2vw;
+    box-sizing: border-box;
+
+    font-size: calc(12px + 0.5vw);
+    text-align: center;
+}
