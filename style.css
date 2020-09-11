@@ -53,11 +53,25 @@ a {
 
 .header_item {
     padding: 20px;
+    
     font-size: calc(14px + 0.5vw);
     font-weight: bold;
     text-transform: uppercase;
+    text-decoration: none;
+    color: var(--main-darker-white);
     
     transition: 0.1s;
+}
+.header_item_icon {
+    display: block;
+    width: calc(25px + 0.5vw);
+    height: auto;
+    margin-top: calc(-22px - 0.5vw);
+    margin-left: 76%;
+    pointer-events: none;
+}
+.space_fix {
+    margin-left: 35px;
 }
 
 .header_item:hover {
@@ -111,7 +125,7 @@ a {
 
 
 
-#page_home {
+#home_page {
     padding-top: calc(50vh - 20vw);
     text-align: center;
 
@@ -142,7 +156,7 @@ a {
 
 
 
-#page_learn_more {
+#learn_more_page {
     background-color: var(--main-lighter-black);
     box-shadow: 0px 0px 20px var(--main-black);
 }
@@ -280,6 +294,13 @@ path.colorize {
     box-shadow: 0px 0px 20px var(--main-black);
 }
 
+#about_page .flex_container {
+    padding-top: 5vh;
+}
+
+
+
+
 #message_container {
     width: 90%;
     margin-left: auto;
@@ -326,25 +347,26 @@ path.colorize {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.social_medias {
+
+
+
+object.social_medias {
+    display: block;
     position: relative;
     width: 100px;
     height: auto;
-    margin: 10px;
     padding: 10px;
-
-    border-radius: 30%;
+    pointer-events: none;
 
     transition: 0.1s;
 }
-.social_medias:hover {
+a.social_medias {
+    border-radius: 50%;
+}
+a.social_medias:hover {
     background-color: var(--main-lighter-black);
-    cursor: pointer;
 
     transition: 0.1s;
-}
-svg.hover {
-    cursor: pointer;
 }
 
 path.colorize.github {
