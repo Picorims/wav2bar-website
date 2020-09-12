@@ -28,6 +28,13 @@ a {
     cursor: pointer;
 }
 
+.animate_on_visible {
+    opacity: 0;
+}
+.animation_trigger {
+    opacity: 1;
+}
+
 
 
 
@@ -102,10 +109,27 @@ a {
     padding-right: 5%;
 }
 
+
+
 .page_title {
     font-size: calc(20px + 0.5vw);
     text-align: center;
 }
+.page_title.animation_trigger {
+    animation: 3s PageTitleAnimation cubic-bezier(.23,1,.32,1);
+}
+@keyframes PageTitleAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 
 .flex_container {
     width: 100%;
@@ -136,16 +160,46 @@ a {
     background-attachment: fixed;
 }
 
+
+
 #title {
     font-size: calc(30px + 5vw);
     text-shadow: 0px 10px 20px var(--main-lighter-black);
 }
+#title.animation_trigger {
+    animation: 2s TitleAnimation cubic-bezier(.23,1,.32,1);
+}
+@keyframes TitleAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 
 #subtitle {
     font-size: calc(22px + 1vw);
     text-shadow: 0px 10px 20px var(--main-lighter-black);
 }
-
+#subtitle.animation_trigger {
+    animation: 3s SubtitleAnimation cubic-bezier(.23,1,.32,1);
+}
+@keyframes SubtitleAnimation {
+    0% {opacity: 0;}
+    20% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 
@@ -161,9 +215,11 @@ a {
     box-shadow: 0px 0px 20px var(--main-black);
 }
 
+
+
 .info_block {
     width: 250px;
-    height: 420px;
+    min-height: 450px;
     margin: 10px;
     padding: 15px;
     box-sizing: border-box;
@@ -175,6 +231,22 @@ a {
 
     text-align: center;
 }
+.info_block.animation_trigger {
+    animation: 2s BlockDisplay 0s cubic-bezier(.23,1,.32,1);
+}
+@keyframes BlockDisplay {
+    0% {opacity: 0;}
+    50% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
 
 .info_block h1 {
     font-size: 30px;
@@ -193,6 +265,20 @@ a {
 }
 path.colorize {
     fill: var(--main-darker-color);
+}
+.block_icon.animation_trigger {
+    animation: 3s IconSpin cubic-bezier(.23,1,.32,1);
+}
+@keyframes IconSpin {
+    0% {opacity: 0;}
+    66% {
+        opacity: 0;
+        transform: scale(0.8) rotate(-10deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
 }
 
 .block_separator {
@@ -311,6 +397,30 @@ path.colorize {
     border: 5px solid var(--main-darker-color);
     border-radius: 20px;
 }
+#message_container.animation_trigger {
+    animation: 2s Message cubic-bezier(.23,1,.32,1);
+}
+@keyframes Message {
+    0% {
+        opacity: 0;
+        border: 5px solid transparent;
+    }
+    30% {
+        opacity: 0;
+        transform: scale(0.8);
+        border: 5px solid transparent;
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1);
+        border: 5px solid transparent;
+    }
+    90% {
+        border: 5px solid var(--main-darker-color);
+    }
+}
+
+
 
 #message_container img {
     border-radius: 100%;
@@ -366,7 +476,7 @@ a.social_medias {
 a.social_medias:hover {
     background-color: var(--main-lighter-black);
 
-    transition: 0.1s;
+    transition: 0.3s;
 }
 
 path.colorize.github {
@@ -382,6 +492,38 @@ path.colorize.youtube {
     fill: var(--main-alert);
 }
 
+.social_medias.animation_trigger.social1 {
+    animation: 3s SocialMediaSpin1 cubic-bezier(.23,1,.32,1);
+}
+.social_medias.animation_trigger.social2 {
+    animation: 3s SocialMediaSpin2 cubic-bezier(.23,1,.32,1);
+}
+.social_medias.animation_trigger.social3 {
+    animation: 3s SocialMediaSpin3 cubic-bezier(.23,1,.32,1);
+}
+.social_medias.animation_trigger.social4 {
+    animation: 3s SocialMediaSpin4 cubic-bezier(.23,1,.32,1);
+}
+/*delaying while keeping at opacity 0. Only way without JS.*/
+@keyframes SocialMediaSpin1 {
+    0% {opacity: 0; transform: scale(0.8) rotate(-10deg);}
+    50% {opacity: 1; transform: scale(1) rotate(0deg);}
+}
+@keyframes SocialMediaSpin2 {
+    0% {opacity: 0; transform: scale(0.8) rotate(-10deg);}
+    15% {opacity: 0; transform: scale(0.8) rotate(-10deg);}
+    65% {opacity: 1; transform: scale(1) rotate(0deg);}
+}
+@keyframes SocialMediaSpin3 {
+    0% {opacity: 0; transform: scale(0.8) rotate(-10deg);}
+    30% {opacity: 0; transform: scale(0.8) rotate(-10deg);}
+    80% {opacity: 1; transform: scale(1) rotate(0deg);}
+}
+@keyframes SocialMediaSpin4 {
+    0% {opacity: 0; transform: scale(0.8) rotate(-10deg);}
+    45% {opacity: 0; transform: scale(0.8) rotate(-10deg);}
+    95% {opacity: 1; transform: scale(1) rotate(0deg);}
+}
 
 
 
