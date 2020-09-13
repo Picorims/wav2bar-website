@@ -225,7 +225,7 @@ a:hover {
 
 
 .info_block {
-    width: calc(100px + 10vw + 2vh);
+    width: calc(100px + 10vw + 5vh);
     margin: calc(10px + 0.5vw);
     padding: calc(10px + 0.7vw);
     box-sizing: border-box;
