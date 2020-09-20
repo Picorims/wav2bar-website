@@ -90,6 +90,8 @@ a:hover {
 
 .header_item:hover {
     background-color: var(--main-darker-color);
+    color: var(--main-darker-white);
+
     cursor: pointer;
     
     transition: 0.1s;
@@ -173,8 +175,15 @@ a:hover {
     font-size: calc(30px + 2vw + 2vh);
     text-shadow: 0px 10px 20px var(--main-lighter-black);
 }
-#title.animation_trigger {
+#title.animation_trigger, #title_img.animation_trigger {
     animation: 2s TitleAnimation cubic-bezier(.23,1,.32,1);
+}
+#title_img {
+    width: calc(50vw + 10vh);
+    height: auto;
+    object-fit: contain;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 @keyframes TitleAnimation {
     from {
