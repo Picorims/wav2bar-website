@@ -1,14 +1,15 @@
 <!--Copyright (c) 2020 Picorims-->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wav2Bar - Free, open source audio visualization software</title>
 
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="node_modules/remixicon/fonts/remixicon.css"/>
+    <script src="index.js"></script>
 </head>
 <body>
 
@@ -20,10 +21,7 @@
         <a href="#download_page" class="header_item">download</a>
         <a href="#about_page" class="header_item">about the creator</a>
         <a href="https://github.com/picorims/audio-visualizer-creator" class="header_item">
-            Code<span class="space_fix"></span>
-            <object class="header_item_icon" type="image/svg+xml" data="assets/remix_icons/github-fill.svg">
-                GitHub
-            </object>
+            Code <i class="ri-github-fill header_item_icon"></i>
         </a>
     </div>
 
@@ -33,6 +31,7 @@
     <div id="home_page" class="page">
         <img id="title_img" src="assets/wav2bar_logo_unicolor.png" class="animate_on_visible" alt="Wav2Bar"/>
         <h2 id="subtitle" class="animate_on_visible">The free, open source audio visualization creator.</h2>
+        <a id="download_btn_link" href="#download_page">Download</a>
     </div>
 
 
@@ -44,9 +43,7 @@
         <div class="flex_container">
 
             <div class="info_block animate_on_visible">
-                <object class="block_icon animate_on_visible" type="image/svg+xml" data="assets/remix_icons/creative-commons-nc-line.svg">
-                    Free
-                </object>
+                <i class="ri-creative-commons-nc-line block_icon animate_on_visible"></i>
                 <hr class="block_separator"/>
                 <h1>Free</h1>
                 <p>
@@ -55,9 +52,7 @@
             </div>
 
             <div class="info_block animate_on_visible">
-                <object class="block_icon animate_on_visible" type="image/svg+xml" data="assets/remix_icons/braces-line.svg">
-                    Open Source
-                </object>
+                <i class="ri-braces-line block_icon animate_on_visible"></i>
                 <hr class="block_separator"/>
                 <h1>Open Source</h1>
                 <p>
@@ -67,9 +62,7 @@
             </div>
 
             <div class="info_block animate_on_visible">
-                <object class="block_icon animate_on_visible" type="image/svg+xml" data="assets/remix_icons/magic-line.svg">
-                    Customization
-                </object>
+                <i class="ri-magic-line block_icon animate_on_visible"></i>
                 <hr class="block_separator"/>
                 <h1>Customization</h1>
                 <p>
@@ -78,9 +71,7 @@
            </div>
 
             <div class="info_block animate_on_visible">
-                <object class="block_icon animate_on_visible" type="image/svg+xml" data="assets/remix_icons/image-2-line.svg">
-                    Video Export
-                </object>
+                <i class="ri-film-line block_icon animate_on_visible"></i>
                 <hr class="block_separator"/>
                 <h1>Video Export</h1>
                 <p>
@@ -124,11 +115,61 @@
         <h1 class="page_title animate_on_visible">Why not giving it a try ? Download what works with your OS:</h1>
     
         <div id="download_container">
-            <h1>Windows</h1>
-            <p>Coming soon</p>
+            <h1>Windows <i class="ri-windows-fill download_os"></i></h1>
+
+            <div class="flex_container">
+                <div class="download_button flex_container">
+                    <i class="ri-window-2-fill download_icon"></i>
+                    <div class="download_text">
+                        <span class="download_type">MSI installer</span>
+                        <br/>
+                        <span class="download_version">Coming soon</span>
+                    </div>
+                </div>
+                
+                <div class="download_button flex_container">
+                    <i class="ri-folder-zip-fill download_icon"></i>
+                    <div class="download_text">
+                        <span class="download_type">ZIP archive</span>
+                        <br/>
+                        <span class="download_version">Coming soon</span>
+                    </div>
+                </div>
+            </div>
+
             <hr/>
-            <h1>Linux</h1>
-            <p>Coming soon</p>
+
+            <h1>Linux <i class="ri-qq-fill download_os"></i></h1><!--not a linux icon but do the job.-->
+
+            <div class="flex_container">
+                <div class="download_button flex_container">
+                    <i class="ri-inbox-unarchive-fill download_icon"></i> 
+                    <div class="download_text">
+                        <span class="download_type">DEB package</span>
+                        <br/>
+                        <span class="download_version">Coming soon</span>
+                    </div>
+                </div>
+
+                <div class="download_button flex_container">
+                    <i class="ri-inbox-unarchive-fill download_icon"></i> 
+                    <div class="download_text">
+                        <span class="download_type">RPM package</span>
+                        <br/>
+                        <span class="download_version">Coming soon</span>
+                    </div>
+                </div>
+                
+                <div class="download_button flex_container">
+                    <i class="ri-folder-zip-fill download_icon"></i>
+                    <div class="download_text">
+                        <span class="download_type">ZIP archive</span>
+                        <br/>
+                        <span class="download_version">Coming soon</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -141,7 +182,7 @@
         <div id="message_container" class="animate_on_visible">
             <img src="assets/profile_icon.png" alt="Picorims profile icon"/>
             <p>
-                Hi, my name is Picorims, a computer science student and the creator of Wav2Bar. The idea of
+                Hi, my name is Picorims, a freshman computer science student and the creator of Wav2Bar. The idea of
                 Wav2Bar came a few months after the discontinuation of Sonic Candle.
                 It was a similar tool that allowed you to make and export basic audio visualization.
                 I always felt limited, and couldn't imagine the only open source option would die.
@@ -183,8 +224,19 @@
     </div>
 
     <div id="bottom">
+        <a id="go_back_up" href="#home_page"><i class="ri-arrow-up-line"></i></a>
+        <p>
+            <a href="#home_page">home</a> |
+            <a href="#learn_more_page">learn more</a> |
+            <a href="#features_page">features</a> |
+            <a href="#download_page">download</a> |
+            <a href="#about_page">about the creator</a> |
+            <a href="https://github.com/picorims/audio-visualizer-creator">
+                Code <i class="ri-github-fill"></i>
+            </a>
+        </p>
         <p>Copyright (C) 2020 Picorims</p>
-        <p>Icons come from Remix Icon: <a href="https://remixicon.com/">Visit their page.</a></p>
+        <p>Icons come from RemixIcon: <a href="https://remixicon.com/">Visit their page.</a></p>
         <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Wav2Bar Logo</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Picorims</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
     </div>
 
