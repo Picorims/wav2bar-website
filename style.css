@@ -16,7 +16,7 @@ html, svg {
     scroll-behavior: smooth;
 }
 
-html {
+* {
     box-sizing: border-box;
 }
 
@@ -270,12 +270,18 @@ a:hover {
 
     text-align: center;
 }
-@media (min-width: 641px) and (max-width: 1000px) {
+@media (min-width: 640px) and (max-width: 900px) {
     .info_block {
         width: 40%;
     }
 }
-@media(min-width: 1001px) {
+@media(min-width: 900px) and (max-width: 1100px) {
+    .info_block {
+        width: 30%;
+        margin: 1%;
+    }
+}
+@media(min-width: 1100px) {
     .info_block {
         width: 23%;
         margin: 1%;
@@ -465,7 +471,7 @@ a:hover {
 
 .download_icon {
     position: relative;
-    width: 25%;
+    width: 30%;
     border-right: 10px dotted var(--main-darker-white);
 
     color: var(--main-darker-white);
@@ -577,8 +583,8 @@ a:hover {
 object.social_medias {
     display: block;
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     padding: 10px;
     pointer-events: none;
 
@@ -643,7 +649,29 @@ path.colorize.youtube {
 
 
 
+#bottom {
+    position: relative;
+    width: 100%;
+    padding: 50px;
+    justify-content: space-between;
+    background-color: var(--main-black);
+
+    font-size: 1rem;
+    text-align: left;
+}
+.bottom_side {
+    width: 250px;
+    padding: 0 10px;
+    flex: 1 1 auto;
+}
+.bottom_side ul {
+    padding-left: 20px;
+}
+
 #go_back_up {
+    position: absolute;
+    right: 20px;
+    top: -100px;
     display: inline-block;
 
     font-size: 3rem;
@@ -664,14 +692,4 @@ path.colorize.youtube {
 #go_back_up:active {
     transition: 0.2s;
     transform: scale(0.95);
-}
-
-#bottom {
-    width: 100%;
-    background-color: var(--main-black);
-    padding: 2vw;
-    box-sizing: border-box;
-
-    font-size: 1rem;
-    text-align: center;
 }
