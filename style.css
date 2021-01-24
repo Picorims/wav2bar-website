@@ -61,7 +61,7 @@ a:hover {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(15, 21, 31, 0.4);
+    background-color: rgba(15, 21, 31, 0.8);
 
     display: flex;
     flex-wrap: wrap;
@@ -109,8 +109,6 @@ a:hover {
         left: initial;
         right: 0;
         width: 300px;
-
-        background-color: rgba(15, 21, 31, 0.8);
     }
 
     #menu_checkbox:checked ~ #header {
@@ -515,6 +513,7 @@ a:hover {
     border-radius: 20px;
     border-bottom: 5px solid var(--main-color);
     box-shadow: 0px 10px 20px var(--main-lighter-black);
+    color: var(--main-darker-white);
 
     transition: 0.2s;
 }
@@ -522,12 +521,14 @@ a:hover {
     align-items: center;
 }
 .download_button:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     cursor: pointer;
+    color: var(--main-white);
     transition: 0.2s;
 }
 .download_button:active {
     transform: scale(0.95);
+    color: var(--main-white);
     transition: 0.2s;
 }
 
@@ -538,8 +539,7 @@ a:hover {
     width: 30%;
     border-right: 10px dotted var(--main-darker-white);
 
-    color: var(--main-darker-white);
-    line-height: 10vh;
+    line-height: 100%;
     font-size: 4rem;
     
 }
@@ -550,7 +550,6 @@ a:hover {
     padding: 0 10%;
     box-sizing: border-box;
     height: auto;
-    color: var(--main-darker-white);
 }
 .download_type {
     font-size: 1.5rem;
