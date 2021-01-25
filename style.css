@@ -28,6 +28,19 @@ body {
     color: var(--main-white);
 }
 
+#body_404 {
+    padding: 10vw;
+    padding-top: 40vh;
+    text-align: center;
+}
+#body_404 h1, #body_404 h2 {
+    text-shadow: 0 0 5px var(--main-darker-color);
+}
+#body_404 i {
+    display: inline-block;
+    transform: translateY(0.15em);
+}
+
 a {
     color: var(--main-color);
     transition: 0.1s;
