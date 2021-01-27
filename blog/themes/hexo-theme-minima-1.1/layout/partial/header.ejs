@@ -1,0 +1,44 @@
+<!--header-->
+<div id="header" class="row">
+  <div class="column mode">
+    <div onclick=setDarkMode(true) id="darkBtn" class=hidden>Go Dark Mode 🌑</div>
+    <div onclick=setDarkMode(false) id="lightBtn">Go Light Mode 🌕</div>
+    <script >
+      if (localStorage.getItem('preferredTheme') == 'light') {
+        setDarkMode(false)
+      }
+      function setDarkMode(isDark) {
+        var darkBtn = document.getElementById('darkBtn')
+        var lightBtn = document.getElementById('lightBtn')
+        if (isDark) {
+          lightBtn.style.display = "block";
+          darkBtn.style.display = "none";
+          localStorage.removeItem('preferredTheme');
+        } else {
+          lightBtn.style.display = "none";
+          darkBtn.style.display = "block";
+          localStorage.setItem('preferredTheme', 'light');
+        }
+        document.body.classList.toggle("darkmode");
+      }
+    </script>
+  </div>
+
+  <div id="header-title" class="six offset-by-one columns ml-1 mt-2">
+    <img alt="Wav2Bar" src="<%= theme.logo %>" width="<%= theme.logo_width %>" height="<%= theme.logo_height %>">
+    <span class="">
+      <%= theme.title %>
+    </span>
+  </div>
+
+  <div class="twelve columns">
+    <nav id="header-nav">
+      <ul>
+        <li class="nav-item"><a href="<%= config.root %>" class="link nav-a">Home</a></li>
+        <% for (name in theme.menu) { %>
+        <li class="nav-item"><a href="<%- url_for(theme.menu[name]) %>" class="link nav-a"><%- name %></a></li>
+        <% } %>
+      </ul>
+    </nav>    
+  </div>
+</div>

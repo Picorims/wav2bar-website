@@ -1,0 +1,47 @@
+<!--archives or category page-->
+<%
+    var title = '';
+    if (page.category) title = page.category;
+    if (page.archive){
+        if (page.year) title = page.year + (page.month ? '/' + page.month : '');
+        else title = "Archives";
+    }
+%>
+<% if(title && is_category()) { %>
+  <h5 class="">Category — <%- title %></h5>
+<% } else if (title) { %>
+  <h5 class=""><%- title %></h5>
+<% } else { %>
+  <h5>All Posts</h5>
+<% } %>
+
+<% page.posts.each(function(post) { %>
+  <article>
+    <div class="row article-container">
+  
+      <div class="three columns lit">
+        <p class="bottom"><%- full_date(post.date, 'll') %></p>
+      </div>
+      <div class="nine columns ml-0">
+        <h5>
+          <a href="<%- url_for(post.path) %>" class="">
+            <% if (post.title == "") { %>
+              no title
+            <% } else { %>
+              <%- post.title %>
+            <% } %>
+          </a>
+        </h5>
+      </div>
+    </div>
+    <div class="row article-container">
+      <p><%= strip_html(post.content).replace(/\n/g, " ").replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150) %>...</p>
+    </div>
+    <img src="<%- url_for(post.path) %><%- post.thumbnail %>" alt="thumbnail">
+    <div class="row article-container">
+      <p class="mb-1">Tags: <%- list_tags(post.tags, {class: 'tag', show_count: false, style: false}) %></p>
+      <p class="mb-1">Categories: <%- list_categories(post.categories, {class: 'category', show_count: false, style: false}) %></p>
+    </div>
+  </article>
+<% }) %>
+<%- partial('partial/pagination', {type: 'page'}) %>

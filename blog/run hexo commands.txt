@@ -1,0 +1,2 @@
+- be in ./blog/
+- npx hexo <command>

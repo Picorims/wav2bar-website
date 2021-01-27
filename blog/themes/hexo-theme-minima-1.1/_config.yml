@@ -1,0 +1,43 @@
+#title in header
+title: "Blog"
+
+#main info
+#owner
+owner: "About the author"
+info: "I'm Picorims, a French freshman student, and I develop Wav2Bar on my sparetime."
+#description
+desc: "You can find release notes and updates about Wav2Bar here."
+#menu
+menu:
+  Archives: /archives
+  Wav2Bar Homepage: ../../
+
+#index/main page max show posts (in number)
+max_post: 10
+
+# social profile at the footer/bottom
+place: https://www.google.com/search?q=picorims
+github: https://github.com/Picorims
+# instagram: https://www.instagram.com/adisaktijrs/
+twitter: https://twitter.com/picorims
+youtube: https://www.youtube.com/channel/UCf15T29ZZ5RxQcbS9onQq9A
+discord: https://discord.gg/EVGzfdP
+mail: picorims.contact@gmail.com
+
+# js
+nanobar: /blog/public/js/nanobar.min.js
+
+# favicon
+favicon: /blog/public/images/favicon.png
+#for some reason it goes 2 times to /blog, ../ fixes this
+logo: /blog/public/images/logo.png
+#prevent clipping
+logo_width: 248
+logo_height: 64
+
+article:
+  thumbnail: true
+
+# DISQUS comments (sign up to Disqus to get disqus_shortname)
+disqus_enabled: false
+disqus_shortname: https-adisaktijrs-github-io
