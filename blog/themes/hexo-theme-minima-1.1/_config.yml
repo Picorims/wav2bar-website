@@ -25,12 +25,12 @@ discord: https://discord.gg/EVGzfdP
 mail: picorims.contact@gmail.com
 
 # js
-nanobar: /blog/public/js/nanobar.min.js
+nanobar: /js/nanobar.min.js
 
 # favicon
-favicon: /blog/public/images/favicon.png
+favicon: /images/favicon.png
 #for some reason it goes 2 times to /blog, ../ fixes this
-logo: /blog/public/images/logo.png
+logo: /images/logo.png
 #prevent clipping
 logo_width: 248
 logo_height: 64
