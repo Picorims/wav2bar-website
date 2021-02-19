@@ -68,7 +68,7 @@ a:hover {
 
 
 
-#header {
+#header nav {
     z-index: 100;
     position: fixed;
     width: 100%;
@@ -117,14 +117,15 @@ a:hover {
 }
 
 @media (max-width: 800px) {
-    #header {
+    #header nav {
         display: none;
         left: initial;
         right: 0;
         width: 300px;
+        transition: 0.2s;
     }
 
-    #menu_checkbox:checked ~ #header {
+    #menu_checkbox:checked ~ #header nav {
         display: flex;
         opacity: 1;
         animation: 0.2s Wow;
@@ -149,8 +150,9 @@ a:hover {
     }
 }
 @media (max-width: 640px) {
-    #header {
+    #header nav {
         width: 100%;
+        transition: 0.2s;
     }
 }
 
