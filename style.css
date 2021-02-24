@@ -747,18 +747,18 @@ path.colorize.youtube {
 }
 
 #go_back_up {
-    position: absolute;
-    right: 20px;
-    top: -100px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
     display: inline-block;
 
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-decoration: none;
 
     background-color: var(--main-gray);
     color: var(--main-darker-white);
     border-radius: 1em;
-    border-bottom: 5px solid var(--main-lighter-black);
+    border-bottom: 5px solid var(--main-color);
     box-shadow: 0px 10px 20px var(--main-darker-black);
 
     transition: 0.2s;

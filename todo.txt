@@ -5,4 +5,4 @@
 - link to bug report
 - faq
 - sticky go back up button
-- remove underline in footer ?
+- remove underline in footer ? -> No
