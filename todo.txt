@@ -1,7 +1,7 @@
 - better explanation
 - more screenshots
 - video
-- current focus
+ok - current focus
 ok - link to bug report
 - faq
 ok - sticky go back up button
