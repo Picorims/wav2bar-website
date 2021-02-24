@@ -2,7 +2,7 @@
 - more screenshots
 - video
 - current focus
-- link to bug report
+ok - link to bug report
 - faq
-- sticky go back up button
+ok - sticky go back up button
 - remove underline in footer ? -> No
