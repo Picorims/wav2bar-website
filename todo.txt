@@ -3,6 +3,6 @@
 - video
 ok - current focus
 ok - link to bug report
-- faq
+ok - faq link
 ok - sticky go back up button
-- remove underline in footer ? -> No
+ok - remove underline in footer ? -> No
