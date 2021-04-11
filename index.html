@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <link rel="stylesheet" type="text/css" href="css/remixicon/fonts/remixicon.css"/>
+    <script src="./js/velocity.js"></script>
     <script src="index.js"></script>
 </head>
 <body>
@@ -26,6 +27,7 @@
             <a href="#home_page" class="header_item">home</a>
             <a href="#learn_more_page" class="header_item">learn more</a>
             <a href="#features_page" class="header_item">features</a>
+            <a href="#gallery_page" class="header_item">gallery</a>
             <a href="#download_page" class="header_item">download</a>
             <a href="#about_page" class="header_item">about the creator</a>
             <a href="https://picorims.github.io/wav2bar-blog/public/" class="header_item">blog</a>
@@ -122,6 +124,39 @@
 
 
 
+    <!-- PAGE - GALLERY-->
+    <section id="gallery_page" class="page">
+
+        <h1 class="page_title animate_on_visible">Gallery</h1>
+        <div id="gallery_images_container">
+            <div id="gallery_prev_img"><i class="ri-arrow-left-s-line"></i></div>
+            <div id="gallery_next_img"><i class="ri-arrow-right-s-line"></i></div>
+            <!--images created here-->
+        </div>
+        <div id="gallery_thumbnails_browser">
+            <div id="gallery_thumbnails_container">
+                <!--thumbnails created here-->
+            </div>
+            <div id="thumbnails_go_left"><i class="ri-arrow-left-s-line"></i></div>
+            <div id="thumbnails_go_right"><i class="ri-arrow-right-s-line"></i></div>
+        </div>
+    </section>
+
+    <svg width="0" viewBox="0 0 200 85" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="transparent_layer">
+                <!-- FLOOD -->
+                <feFlood flood-color="#c6deff" flood-opacity="0.1" result="FLOOD"></feFlood>
+                <!-- FILL -->
+                <feComposite operator="in" result="FILL" in="FLOOD" in2="SourceGraphic"></feComposite>
+                <!-- TRANSPARENT_LAYER_APPLIED -->
+                <feComposite result="TRANSPARENT_LAYER_APPLIED" in="FILL" in2="SourceGraphic"></feComposite>
+            </filter>
+        </defs>
+    </svg>
+
+
+
     <!--PAGE - DOWNLOAD-->
     <section id="download_page" class="page">
         <h1 class="page_title animate_on_visible">Why not giving it a try ? Download what works with your OS</h1>
@@ -138,6 +173,12 @@
             Right now, I am mostly working on improving the user interface and how the user can interact with the application more easily.
             Some internal refactoring is also needed to make this easier. I also take a look at performances and have potential ideas
             to improve rendering performances.
+        </p>
+        <h3>Linux:</h3>
+        <p>
+            There are no Linux package available for download right now, but you can find configurations for .deb and .rpm packages in
+            package.JSON. Thus if you have a Linux machine and install the required dependencies, you should be able to make them by
+            yourself, however there is no guarantee they will work as I was never able to test them.
         </p>
 
         <div id="download_container">
@@ -190,6 +231,7 @@
             <h1>Linux <i class="ri-qq-fill download_os"></i></h1><!--not a linux icon but do the job.-->
 
             <div class="flex_container">
+                <!--
                 <div class="download_button flex_container">
                     <i class="ri-inbox-unarchive-fill download_icon"></i> 
                     <div class="download_text">
@@ -207,6 +249,7 @@
                         <span class="download_version">Coming soon</span>
                     </div>
                 </div>
+                -->
                 
                 <div class="download_button flex_container">
                     <i class="ri-folder-zip-fill download_icon"></i>
@@ -287,6 +330,7 @@
                 <li><a href="#home_page">home</a></li>
                 <li><a href="#learn_more_page">learn more</a></li>
                 <li><a href="#features_page">features</a></li>
+                <li><a href="#gallery_page">gallery</a></li>
                 <li><a href="#download_page">download</a></li>
                 <li><a href="#about_page">about the creator</a></li>
                 <li><a href="https://picorims.github.io/wav2bar-blog/public/">blog</a></li>

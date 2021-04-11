@@ -478,6 +478,108 @@ a:hover {
 
 
 
+
+#gallery_images_container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+}
+#gallery_images_container img {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    object-fit: contain;
+    border: 5px solid var(--main-white);
+}
+
+#gallery_prev_img, #gallery_next_img {
+    position: absolute;
+    height: 20%;
+    top: 40%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    
+    font-size: 3rem;
+    background-color: var(--main-black);
+    opacity: 0.8;
+    border-radius: 500px;
+
+    transition: 0.2s;
+}
+#gallery_next_img {
+    right : 0;
+}
+#gallery_prev_img:hover, #gallery_next_img:hover {
+    cursor: pointer;
+    background-color: var(--main-darker-color);
+    opacity: 1;
+    transition: 0.2s;
+}
+
+
+
+
+
+#gallery_thumbnails_browser {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    margin: 10px 0;
+}
+#gallery_thumbnails_container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+    display: flex;
+    overflow: hidden;
+}
+#gallery_thumbnails_container img {
+    margin: 5px;
+    border: 2px solid var(--main-darker-white);
+    transition: 0.1s;
+}
+#gallery_thumbnails_container img:hover {
+    cursor: pointer;
+    border: 5px solid var(--main-white);
+    box-shadow: 0 5px 5px var(--main-darker-color);
+    transition: 0.1s;
+}
+#gallery_thumbnails_container img.focused {
+    filter: url("#transparent_layer");
+    box-shadow: 0 5px 5px var(--main-darker-color);
+    transition: 0.1s;
+}
+
+#thumbnails_go_left, #thumbnails_go_right {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    
+    font-size: 3rem;
+    background-color: var(--main-black);
+    opacity: 0.8;
+
+    transition: 0.2s;
+}
+#thumbnails_go_right {
+    right : 0;
+}
+#thumbnails_go_left:hover, #thumbnails_go_right:hover {
+    cursor: pointer;
+    background-color: var(--main-darker-color);
+    opacity: 1;
+    transition: 0.2s;
+}
+
+
+
+
 #download_page {
     background-color: var(--main-lighter-black);
     box-shadow: 0px 0px 20px var(--main-black);

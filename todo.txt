@@ -1,5 +1,5 @@
 - better explanation
-- more screenshots
+- more screenshots => (flèches sur les côtés de la gallerie pour défiler)
 - video
 ok - current focus
 ok - link to bug report
