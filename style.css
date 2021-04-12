@@ -420,6 +420,28 @@ a:hover {
 
 
 
+.learn_more_step {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+.learn_more_step > * {
+    width: 50%;
+    object-fit: contain;
+}
+.learn_more_desc {
+    padding: 20px;
+}
+@media (max-width: 640px) {
+    .learn_more_step > * {
+        width: 100%;
+    }
+    .reverse_flex_flow {
+        flex-flow: column-reverse;
+    }
+}
+
 
 
 
