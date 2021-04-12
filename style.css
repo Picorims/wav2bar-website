@@ -870,6 +870,12 @@ path.colorize.youtube {
 .bottom_side ul {
     padding-left: 20px;
 }
+#bottom a {
+    text-decoration: none;
+}
+#bottom a:hover {
+    text-decoration: underline;
+}
 
 #go_back_up {
     position: fixed;
