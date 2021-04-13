@@ -654,6 +654,7 @@ a:hover {
     border-bottom: 5px solid var(--main-color);
     box-shadow: 0px 10px 20px var(--main-lighter-black);
     color: var(--main-darker-white);
+    text-decoration: none;
 
     transition: 0.2s;
 }
