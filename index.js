@@ -36,6 +36,7 @@ function CreateGallery() {
         "./assets/gallery/2021-03-17 111307 showcase radioshow.png",
         "./assets/gallery/2021-03-17 111504 showcase sunphone.png",
         "./assets/gallery/2021-03-17 111658 showcase waves_fade.png",
+        "./assets/gallery/2021-07-21 155400 wav2bar 0.2.0 beta.png",
     ];
     let imagesDOM = [];
     let thumbnailsDOM = [];
