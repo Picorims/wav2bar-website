@@ -1,4 +1,4 @@
-//Copyright (c) 2020 Picorims
+//Copyright (c) 2020-2022 Picorims
 
 //page loaded
 window.onload = function() {
