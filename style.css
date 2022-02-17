@@ -902,6 +902,7 @@ path.colorize.youtube {
 #go_back_up:hover {
     transition: 0.2s;
     transform: scale(1.1);
+    text-decoration: none !important;
 }
 #go_back_up:active {
     transition: 0.2s;
