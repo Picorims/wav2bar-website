@@ -203,69 +203,85 @@
     <section id="download_page" class="page">
         <h1 class="page_title animate_on_visible">Why not giving it a try ? Download what works with your OS</h1>
     
-        <p>
-            Note: Wav2Bar is still in beta, therefore it is not exempt of bugs.
-            Please backup your projects in case something goes wrong!
-            If you find any bug (as small as it seems), please
-            <a href="https://github.com/Picorims/wav2bar/issues">report it</a>!
-            If you have any suggestions for new features or improvements, you can also
-            <a href="https://github.com/Picorims/wav2bar/issues">submit them here</a>.
-        </p>
+        <h3>Disclaimers</h3>
+
+        <div class="disclaimer">
+            <p>
+                <strong>
+                    This tool is a side project and is provided as is, without garantee of long term maintenance.
+                    If this is fine for you, you can proceed. Enjoy!
+                </strong>
+            </p>
+    
+            <p>
+                Wav2Bar is still in beta, therefore it is not exempt of bugs.
+                Please backup your projects in case something goes wrong!
+                If you find any bug (as small as it seems), please
+                <a href="https://github.com/Picorims/wav2bar/issues">report it</a>!
+                If you have any suggestions for new features or improvements, you can also
+                <a href="https://github.com/Picorims/wav2bar/issues">submit them here</a>.
+            </p>    
+        </div>
+
         <h3>Current development focus:</h3>
+
         <p>
             Right now, I am mostly working on improving the user interface and how
-            the user can interact with the application more easily.
+            the user can interact with the application more easily, as well as enriching visual objects.
             Some internal refactoring is also needed to make this easier.
             I also take a look at performances and have potential ideas
             to improve rendering performances.
         </p>
+
         <h3>Linux:</h3>
+
         <p>
             Right now, only the .zip package option is available for Linux (built on Ubuntu).
-            I am currently having issues producing .deb and .rpm packages.
-            However you can find configurations for .deb and .rpm packages in
-            package.JSON (see on <a href="https://github.com/picorims/wav2bar"">GitHub</a>).
+            I tried producing .deb and .rpm packages in the past without success. I then tried
+            to offer .flatpak support, but a bug in electron-forge prevents me to do this right now.
+            However you can find configurations for .flatpak packages in
+            forge.config.js (see on <a href="https://github.com/picorims/wav2bar"">GitHub</a>).
             Thus if you have a Linux machine and install
-            the required dependencies, you should be able to make them by
+            the required dependencies, you may be able to make them by
             yourself, however there is no guarantee they will work as
             I was never able to test them.
         </p>
-        <p>
-            To overcome that, I am currently considering offering .flatpak packages.
-            This may become an available option in the coming 0.3.x releases.
-        </p>
+
         <h3>Detailed Changelogs, known issues, older releases: <a href="https://github.com/Picorims/wav2bar/releases">Check</a></h3>
+
         <h3>Support:</h3>
+
         <p>Visit the <a href="https://discord.gg/EVGzfdP">Discord server</a> for better support.</p>
+
         <div id="download_container">
             <h1>Windows <i class="ri-windows-fill download_os"></i></h1>
             <p>If you want a portable application, pick the ZIP archive, otherwise if you want a classic Windows Installer, choose the MSI installer.</p>
 
             <div class="flex_container">
-                <a class="download_button flex_container" href="https://github.com/Picorims/wav2bar/releases/download/v0.3.1-beta/Wav2Bar-win32-x64-0.3.1-beta.msi">
+                <a class="download_button flex_container" href="https://github.com/Picorims/wav2bar/releases/download/v0.3.2-beta/Wav2Bar-win32-x64-0.3.2-beta.msi">
                     <i class="ri-window-2-fill download_icon"></i>
                     <div class="download_text">
                         <span class="download_type">MSI installer</span>
                         <br/>
-                        <span class="download_version">0.3.1 Beta</span>
+                        <span class="download_version">0.3.2 Beta</span>
                     </div>
                 </a>
                 
-                <a class="download_button flex_container" href="https://github.com/Picorims/wav2bar/releases/download/v0.3.1-beta/Wav2Bar-win32-x64-0.3.1-beta.zip">
+                <a class="download_button flex_container" href="https://github.com/Picorims/wav2bar/releases/download/v0.3.2-beta/Wav2Bar-win32-x64-0.3.2-beta.zip">
                     <i class="ri-folder-zip-fill download_icon"></i>
                     <div class="download_text">
                         <span class="download_type">ZIP archive</span>
                         <br/>
-                        <span class="download_version">0.3.1 Beta</span>
+                        <span class="download_version">0.3.2 Beta</span>
                     </div>
                 </a>
 
-                <a class="download_button flex_container" href="https://github.com/Picorims/wav2bar/releases/tag/v0.3.1-beta">
+                <a class="download_button flex_container" href="https://github.com/Picorims/wav2bar/releases/tag/v0.3.2-beta">
                     <i class="ri-terminal-line download_icon"></i>
                     <div class="download_text">
                         <span class="download_type">Run from source</span>
                         <br/>
-                        <span class="download_version">0.3.1 Beta</span>
+                        <span class="download_version">0.3.2 Beta</span>
                     </div>
                 </a>
             </div>
@@ -275,56 +291,47 @@
             <p>(no support available)</p>
 
             <div class="flex_container">
-                <a class="download_button flex_container" href="https://github.com/Picorims/wav2bar/releases/tag/v0.3.1-beta">
+                <a class="download_button flex_container" href="https://github.com/Picorims/wav2bar/releases/tag/v0.3.2-beta">
                     <i class="ri-terminal-line download_icon"></i>
                     <div class="download_text">
                         <span class="download_type">Run from source</span>
                         <br/>
-                        <span class="download_version">0.3.1 Beta</span>
+                        <span class="download_version">0.3.2 Beta</span>
                     </div>
                 </a>
             </div>
             <hr/>
 
             <h1>Linux <i class="ri-qq-fill download_os"></i></h1><!--not a linux icon but do the job.-->
-            <p>(low support for now)</p>
+            <p>(limited support)</p>
 
             <div class="flex_container">
                 <!--
                 <a class="download_button flex_container">
                     <i class="ri-inbox-unarchive-fill download_icon"></i> 
                     <div class="download_text">
-                        <span class="download_type">DEB package</span>
-                        <br/>
-                        <span class="download_version">Coming soon</span>
-                    </div>
-                </a>
-
-                <a class="download_button flex_container">
-                    <i class="ri-inbox-unarchive-fill download_icon"></i> 
-                    <div class="download_text">
-                        <span class="download_type">RPM package</span>
+                        <span class="download_type">FLATPAK package</span>
                         <br/>
                         <span class="download_version">Coming soon</span>
                     </div>
                 </a>
                 -->
                 
-                <a class="download_button flex_container" href="https://github.com/Picorims/wav2bar/releases/download/v0.3.1-beta/Wav2Bar-linux-x64-0.3.1-beta.zip">
+                <a class="download_button flex_container" href="https://github.com/Picorims/wav2bar/releases/download/v0.3.2-beta/Wav2Bar-linux-x64-0.3.2-beta.zip">
                     <i class="ri-folder-zip-fill download_icon"></i>
                     <div class="download_text">
                         <span class="download_type">ZIP archive</span>
                         <br/>
-                        <span class="download_version">0.3.1 Beta</span>
+                        <span class="download_version">0.3.2 Beta</span>
                     </div>
                 </a>
 
-                <a class="download_button flex_container" href="https://github.com/Picorims/wav2bar/releases/tag/v0.3.1-beta">
+                <a class="download_button flex_container" href="https://github.com/Picorims/wav2bar/releases/tag/v0.3.2-beta">
                     <i class="ri-terminal-line download_icon"></i>
                     <div class="download_text">
                         <span class="download_type">Run from source</span>
                         <br/>
-                        <span class="download_version">0.3.1 Beta</span>
+                        <span class="download_version">0.3.2 Beta</span>
                     </div>
                 </a>
             </div>
