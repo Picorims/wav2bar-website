@@ -4,6 +4,11 @@
 window.onload = function() {
     AnimateOnVisible();
     CreateGallery();
+
+    document.getElementById("show_youtube_video").addEventListener("click", () => {
+        document.getElementById("youtube_wall").remove();
+        document.getElementById("features_video").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/NWCe2zKY8Wo" title="YouTube video player" frameborder="0" allow="clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+    });
 }
 
 //function to trigger animation when an element is visible. Track elements with a specific class

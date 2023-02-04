@@ -52,6 +52,19 @@ a:hover {
     color: var(--main-darker-color);
 }
 
+button {
+    padding: 0.5em 1em;
+    margin: 1em 0;
+    background-color: var(--main-darker-color);
+    border: none;
+    border-bottom: 5px solid var(--main-color);
+    border-radius: 10px;
+    font-weight: bold;
+    color: var(--main-white);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
 .animate_on_visible {
     opacity: 0;
 }
@@ -461,7 +474,11 @@ a:hover {
 
 #features_video {
     width: 60%;
-    max-width: 1000px;
+    max-width: 560px;
+    min-height: 315px;
+    background-color: var(--main-black);
+    background-image: url("./assets/video_thumbnail.jpg");
+    background-size: cover;
 }
 #features_video iframe {
     display: block;
@@ -474,6 +491,12 @@ a:hover {
     #features_video {
         width: 90%;
     }
+}
+
+#youtube_wall {
+    min-height: 315px;
+    padding: 10px;
+    background-color: #090c11cc;
 }
 
 #features_container {
