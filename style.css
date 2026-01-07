@@ -844,7 +844,7 @@ the SVG file:
 <?xml-stylesheet type="text/css" href="../../style.css" ?>
  */
 path.colorize.github {
-    fill: var(--main-white);
+    fill: #FFFFFF;
 }
 path.colorize.bluesky {
     fill: #1185FE;
@@ -853,7 +853,7 @@ path.colorize.discord {
     fill: #7289DA;
 }
 path.colorize.youtube {
-    fill: var(--main-alert);
+    fill: #FF0000;
 }
 
 .social_medias.animation_trigger.social1 {
