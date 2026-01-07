@@ -269,6 +269,7 @@ button {
     object-fit: contain;
     margin-top: 100px;
     margin-bottom: 100px;
+    filter: drop-shadow(0 5px 10px var(--main-darker-black));
 }
 @keyframes TitleAnimation {
     from {
