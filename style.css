@@ -122,10 +122,16 @@ button {
     padding: 1rem;
     
     font-size: 1.2rem;
+    line-height: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--main-darker-white);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
     
     transition: 0.1s;
 }
@@ -168,11 +174,6 @@ button {
         width: 100%;
         transition: 0.2s;
     }
-}
-
-.header_item_icon {
-    position: relative;
-    top: 10%;
 }
 
 .header_item:hover {
