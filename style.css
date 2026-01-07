@@ -839,11 +839,15 @@ a.social_medias:hover {
     transition: 0.2s;
 }
 
+/* HACK only has an effect if the stylesheet is imported within
+the SVG file:
+<?xml-stylesheet type="text/css" href="../../style.css" ?>
+ */
 path.colorize.github {
     fill: var(--main-white);
 }
-path.colorize.twitter {
-    fill: #1da1f2;
+path.colorize.bluesky {
+    fill: #1185FE;
 }
 path.colorize.discord {
     fill: #7289DA;
